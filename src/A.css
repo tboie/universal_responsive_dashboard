@@ -2,7 +2,7 @@
   position: absolute;
   display: none;
   border: 1px solid lightgray;
-  background-color: #000;
+  background-color: black;
   overflow: hidden;
   touch-action: none;
 }
@@ -22,8 +22,8 @@
 }
 
 .lock {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   margin: auto;
   border: 2px solid gray;
@@ -89,12 +89,20 @@
   cursor: text;
   margin-top: 2px;
   margin-left: 12px;
-  width: 96px;
+  width: 112px;
   border: 0;
   text-align: center;
   z-index: 999;
   user-select: all;
   font-size: 16px;
+}
+
+.dim-label {
+  position: absolute;
+  margin-right: 4.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+  color: lightgray;
 }
 
 .split {
@@ -126,6 +134,11 @@
 .split:hover,
 .delete:hover {
   font-weight: 600;
+}
+
+img {
+  width: 100%;
+  padding: 0.75rem;
 }
 
 .img-test {
