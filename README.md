@@ -6,7 +6,7 @@
 
 ![output](https://user-images.githubusercontent.com/26150152/179244422-b0102d1c-71d1-45a0-ab13-ca630db95ab6.gif)
 
-![cascading](https://user-images.githubusercontent.com/26150152/179251236-d8e99567-5226-45c3-bad7-a96ac86d0e0f.png)
+![cascading](https://user-images.githubusercontent.com/26150152/179254478-38b39839-03a6-4285-9dec-1933d1cf2cd9.png)
 
 ## Goals
 Create a web-based absolute front-end GUI template system with the following features:
