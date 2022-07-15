@@ -8,5 +8,10 @@
 
 ![cascading](https://user-images.githubusercontent.com/26150152/179251236-d8e99567-5226-45c3-bad7-a96ac86d0e0f.png)
 
-## Goal
-- Create a fully-maneuverable, modifiable, responsive, touchable, connected GUI template system
+## Goals
+Create a web-based absolute front-end GUI template system with the following features:
+- moveable,
+- modifiable
+- touchable
+- connected
+- breakpoints
