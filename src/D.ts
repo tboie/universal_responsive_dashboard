@@ -8,7 +8,7 @@ export type T = {
   w: number; // width
   h: number; // height
   z: number; // z index
-  l: T_LOCK; // locks obj. ex) { t: true, r: false, ... }
+  l: T_LOCK; // side locks obj. ex) { t: true, r: false, ... }
   // connected unit index to sides. ex) { t: [1], r: [2, 3], ...}
   c: { t: number[]; r: number[]; b: number[]; l: number[] };
   bp: ("sm" | "md" | "lg")[]; // width breakpoint template class name
