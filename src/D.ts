@@ -1,31 +1,34 @@
 export type T_SIDE = "t" | "r" | "b" | "l";
 export type T_LOCK = { t?: boolean; r?: boolean; b?: boolean; l?: boolean };
 export type T = {
-  i: number;
-  t: string;
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-  z: number;
-  l: T_LOCK;
+  i: number; // index
+  t: string; // component type
+  x: number; // position x
+  y: number; // position y
+  w: number; // width
+  h: number; // height
+  z: number; // z index
+  l: T_LOCK; // locks obj. ex) { t: true, r: false, ... }
+  // connected unit index to sides. ex) { t: [1], r: [2, 3], ...}
   c: { t: number[]; r: number[]; b: number[]; l: number[] };
-  bp: ("sm" | "md" | "lg")[];
-  d?: { x: number; y: number };
-  aR?: number;
-  aB?: number;
-  tX?: number;
-  tY?: number;
-  oX?: number;
-  oY?: number;
-  oW?: number;
-  oH?: number;
-  minW: number;
-  maxW: number;
-  minH: number;
-  maxH: number;
-  tempL?: T_LOCK;
-  deleted?: boolean;
+  bp: ("sm" | "md" | "lg")[]; // width breakpoint template class name
+  minW: number; // minimum width
+  maxW: number; // maximum height
+  minH: number; // minimum height
+  maxH: number; // maximum height
+
+  // automatically set...
+  d?: { x: number; y: number }; // distance moved
+  aR?: number; // anchor right
+  aB?: number; // anchor bottom
+  tX?: number; // translate x
+  tY?: number; // translate y
+  oX?: number; // original x
+  oY?: number; // origianl y
+  oW?: number; // original width
+  oH?: number; // origianl height
+  tempL?: T_LOCK; // temporary locks
+  deleted?: boolean; // deleted
 };
 
 // 10x10 Grid
