@@ -9,9 +9,50 @@
 ![cascading](https://user-images.githubusercontent.com/26150152/179254478-38b39839-03a6-4285-9dec-1933d1cf2cd9.png)
 
 ## Goals
-Create a web-based absolute front-end GUI template system with the following features:
+Create a browser GUI template system with the following features:
 - moveable,
 - modifiable
 - touchable
 - connected
 - breakpoints
+
+## Install/Run
+```
+npm i
+npm start
+```
+
+## Absolute Unit Component
+- The core component containing fundamental properties:
+``` typescript
+export type T = {
+  i: number; // index
+  t: string; // component type
+  x: number; // position x
+  y: number; // position y
+  w: number; // width
+  h: number; // height
+  z: number; // z index
+  l: T_LOCK; // side locks obj. ex) { t: true, r: false, ... }
+  // connected unit index to sides. ex) { t: [1], r: [2, 3], ...}
+  c: { t: number[]; r: number[]; b: number[]; l: number[] };
+  bp: ("sm" | "md" | "lg")[]; // width breakpoint template class name
+  minW: number; // minimum width
+  maxW: number; // maximum height
+  minH: number; // minimum height
+  maxH: number; // maximum height
+
+  // automatically set...
+  d?: { x: number; y: number }; // distance moved
+  aR?: number; // anchor right
+  aB?: number; // anchor bottom
+  tX?: number; // translate x
+  tY?: number; // translate y
+  oX?: number; // original x
+  oY?: number; // origianl y
+  oW?: number; // original width
+  oH?: number; // origianl height
+  tempL?: T_LOCK; // temporary locks
+  deleted?: boolean; // deleted
+};
+```
