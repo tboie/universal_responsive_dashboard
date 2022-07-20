@@ -1,5 +1,15 @@
 # UNIVERSAL RESPONSIVE DASHBOARD
 
+## Goals
+Create a browser GUI template system with the following features:
+- moveable,
+- sizeable,
+- touchable,
+- connected,
+- lockable sides
+- template width breakpoints
+
+## Demo
 <img width="480" alt="concept" src="https://user-images.githubusercontent.com/26150152/179244802-826ec5b1-a7f7-49de-a2be-e8d8c73ef62e.png">
 
 <img width="300" alt="unit" src="https://user-images.githubusercontent.com/26150152/179247744-40f889f2-bf93-4eba-8968-69e852182b3c.png">
@@ -8,13 +18,8 @@
 
 ![cascading](https://user-images.githubusercontent.com/26150152/179254478-38b39839-03a6-4285-9dec-1933d1cf2cd9.png)
 
-## Goals
-Create a browser GUI template system with the following features:
-- moveable,
-- modifiable
-- touchable
-- connected
-- breakpoints
+## Demo
+[Universal Responsive Dashboard Demo](https://universal-responsive-dashboard.vercel.app/)
 
 ## Install/Run
 ```
@@ -22,8 +27,12 @@ npm i
 npm start
 ```
 
-## Absolute Unit Component
-- The core component containing fundamental properties:
+## Template Width Breakpoints
+- (sm, md, lg) are set in [src/A.css](https://github.com/tboie/universal_responsive_dashboard/blob/main/src/A.css)
+
+## Template Unit Configuration 
+- Template file in [src/D.ts](https://github.com/tboie/universal_responsive_dashboard/blob/main/src/D.ts)
+- The Core Absolute Unit Component has the following properties:
 ``` typescript
 export type T = {
   i: number; // index
@@ -49,7 +58,7 @@ export type T = {
   tX?: number; // translate x
   tY?: number; // translate y
   oX?: number; // original x
-  oY?: number; // origianl y
+  oY?: number; // original y
   oW?: number; // original width
   oH?: number; // origianl height
   tempL?: T_LOCK; // temporary locks
