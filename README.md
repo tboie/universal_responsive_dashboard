@@ -24,7 +24,7 @@ Create a browser GUI template system with the following features:
 
 ## Demo
 
-[Universal Responsive Dashboard Demo](https://universal-responsive-dashboard.vercel.app/)
+[Universal Responsive Dashboard Demo](https://unidashboard.vercel.app/)
 
 ## Install/Run
 
