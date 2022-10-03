@@ -272,6 +272,8 @@ const MODIFY = (
   let DIST = { ...P_DIST };
 
   // min/max lock toggles
+  // TODO: resize gets stuck when min/max bounds hit.
+  //       check mouse direction change?
   if (TYPE === "LOCKS_ON" || "LOCKS_OFF") {
     if (D[i].w === D[i].minW || D[i].w === D[i].maxW) {
       if (locks.l && !locks.r) {
